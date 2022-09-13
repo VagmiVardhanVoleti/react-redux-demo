@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from "react";
+import CounterWithClass from "./components/CounterWithClass";
 
-function App() {
+// const INCREMENT = "INCREMENT";
+// const DECREMENT = "DECREMENT";
+
+// const initialState = { count: 0 };
+
+// const reducer = (state = initialState, action) => {
+//   switch (action.type) {
+//     case INCREMENT:
+//       return {
+//         ...state,
+//         count: state.count + 1,
+//       };
+//     case DECREMENT:
+//       return {
+//         ...state,
+//         count: state.count - 1,
+//       };
+//     default:
+//       return state;
+//   }
+// };
+
+const App = () => {
+  // const [state, dispatch] = useReducer(reducer, initialState);
+
+  // const increment = () => {
+  //   dispatch({ type: INCREMENT });
+  // };
+
+  // const decrement = () => {
+  //   dispatch({ type: DECREMENT });
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CounterWithClass />
+    </>
   );
-}
+};
 
 export default App;
