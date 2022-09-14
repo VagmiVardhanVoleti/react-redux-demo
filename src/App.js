@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import CounterWithClass from "./components/CounterWithClass";
+import CounterWithFunctionalComp from "./components/CounterWithFunctionalComp";
 
 // const INCREMENT = "INCREMENT";
 // const DECREMENT = "DECREMENT";
@@ -36,7 +37,7 @@ const App = () => {
 
   return (
     <>
-      <CounterWithClass />
+      <CounterWithFunctionalComp />
     </>
   );
 };
